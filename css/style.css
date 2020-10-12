@@ -75,6 +75,9 @@ body {
 
 
 .nav-link {
+  padding: 32px 0 32px 0;
+  display: flex;
+
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -82,7 +85,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  padding-bottom: 30px;
+
 }
 
 
@@ -123,6 +126,9 @@ body {
 }
 
 .contact-link {
+  display: flex;
+  padding: 32px 0 32px 0;
+
   color: var(--primary-text-color);
 
   font-weight: 500;
@@ -141,7 +147,14 @@ body {
 
 .hero {
   background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 280px;
+}
+
+.hero-container {
+  max-width: 700px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -152,8 +165,7 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  
-  margin: 0;
+margin-bottom: 30px;
 }
 
 .hero-button {
