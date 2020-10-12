@@ -102,7 +102,23 @@ body {
   margin-left: auto;
 }
 
-.header-contacts >.contact-item:last-child {
+.contact-item {
+  color: var(--footer-link-color);
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.contact-item:hover,
+.contact-item:focus {
+  color: var(--accent-color);
+}
+
+.contact-item:last-child {
   margin-left: 50px;
 }
 
@@ -368,7 +384,7 @@ body {
   color: var(--accent-color);
 }
 
-.contact-item {
+.adress-item {
   color: var(--footer-link-color);
 
   font-style: normal;
@@ -379,7 +395,9 @@ body {
   text-decoration: none;
 }
 
-.contact-item:hover,
-.contact-item:focus {
+.adress-item:hover,
+.adress-item:focus {
   color: var(--accent-color);
 }
+
+
