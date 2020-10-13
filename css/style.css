@@ -40,6 +40,10 @@ body {
 
 /* Работа с header */
 
+.header {
+  border-bottom: 1px solid #ECECEC;
+}
+
 .main-nav {
   display: flex;
   align-items: center;
@@ -165,7 +169,7 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .hero-button {
@@ -208,9 +212,6 @@ margin-bottom: 30px;
   padding-right: 6px;
 }
 
-.advantage-head {
-  text-align: center;
-}
 
 .advantage-title {
 margin-bottom: 10px;
@@ -285,7 +286,7 @@ margin-bottom: 10px;
 }
 
 .team-title {
-margin-bottom: 50px;
+  margin-bottom: 50px;
 
   color: var(--title-text-color);
 
@@ -299,8 +300,8 @@ margin-bottom: 50px;
 
 
 .team-member {
-padding-top: 30px;
-padding-bottom: 10px;
+  padding-top: 30px;
+  padding-bottom: 10px;
 
   color: var(--title-text-color);
 
@@ -312,7 +313,7 @@ padding-bottom: 10px;
 }
 
 .team-profession {
-margin-bottom: 30px;
+  margin-bottom: 30px;
 
   color: var(--primary-text-color);
 
@@ -328,11 +329,22 @@ margin-bottom: 30px;
 
 /* Filter */
 
+.usless-title {
+  display: none;
+}
+
 .filter-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  padding-top: 94px;
+  
   list-style: none;
 }
 
 .filter-item.current {
+  margin-left: 0;
+
   color: var(--primary-white-color);
   background-color: #2196f3;
 
@@ -345,19 +357,27 @@ margin-bottom: 30px;
 
 .filter-item.current:hover,
 .filter-item.current:focus {
-  color: var(--accent-color);
-  background-color: var(--primary-white-color);
+  color:  var(--title-text-color);
+  background-color: #f5f4fa;
+  
 }
 
 .filter-item {
+  margin-left: 8px;
+  padding: 9px 22px;
+
   color: var(--title-text-color);
   background-color: #f5f4fa;
+  border: 1px solid transparent;
+  text-decoration: none;
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  border-radius: 4px;
+  
 }
 
 .filter-item:hover,
@@ -370,19 +390,38 @@ margin-bottom: 30px;
 
 .portfolio {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
 .portfolio-item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+
   color: var(--primary-white-color);
+  border: 1px solid #EEEEEE;
 }
 
+.portfolio-item:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.portfolio-item:nth-last-child(-n + 3) {
+  margin-bottom: 93px;
+} 
+
 .portfolio-title {
+  margin: 20px 24px 0 24px;
+
   color: var(--title-text-color);
 
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
 }
 
 .portfolio-link {
@@ -391,6 +430,8 @@ margin-bottom: 30px;
 
 
 .portfolio-type {
+  margin: 0 24px 20px 24px;
+
   color: var(--primary-text-color);
 
   font-weight: 400;
@@ -401,8 +442,10 @@ margin-bottom: 30px;
 /*-------------------- Работа с footer ----------------------*/
 
 .footer {
-  background-color: #2f303a;
   padding: 60px 0;
+  border-top: 1px solid #ECECEC;
+
+  background-color: #2f303a;
 }
 
 .contact-logo{

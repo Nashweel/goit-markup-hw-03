@@ -17,46 +17,50 @@
 
   <body>
     <!--Шапка сайта, навигация-->
-    <header>
-      <nav class="main-nav">
-        <a href="./index.html" class="header-logo">Web<span class="logo-part">Studio</span></a>
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link" href="./index.html">Студия</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link current" href="./portfolio.html">Портфолио</a>
-          </li>
-          <li>
-            <a class="nav-link" href="">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <ul class="header-contacts">
-        <li class="contact-item">
-          <a href="mailto:info@devstudio.com" class="contact-link"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="contact-item">
-          <a href="tel:+380961111111" class="contact-link">+380961111111</a>
-        </li>
-      </ul>
-    </header>
+    <header class="header">
+      <div class="container">
+          <nav class="main-nav">
+            <a href="./index.html" class="header-logo"
+              >Web<span class="logo-part">Studio</span></a
+            >
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Студия</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link current" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Контакты</a>
+              </li>
+            </ul>
+        
+            <ul class="header-contacts">
+              <li class="contact-item">
+                <a href="mailto:info@devstudio.com" class="contact-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="contact-item">
+                <a href="tel:+380961111111" class="contact-link">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </nav>
+      </div>
+          </header>
     <!-- Портфолио -->
 
     <main>
       <section class="portfolio-menu">
-        <h1>Портфолио</h1>
+      <div class="container">
+        <h1 class="usless-title">Портфолио</h1>
 
         <ul class="filter-nav">
-          <li>
-            <button type="button" class="filter-item current">Все</button>
-          </li>
-          <li><button type="button" class="filter-item">Веб-сайты</button></li>
-          <li><button type="button" class="filter-item">Приложения</button></li>
-          <li><button type="button" class="filter-item">Дизайн</button></li>
-          <li><button type="button" class="filter-item">Маркетинг</button></li>
+          <li><a href="" class="filter-item current">Все</a></li>
+          <li><a href="" class="filter-item">Веб-сайты</a></li>
+          <li><a href="" class="filter-item">Приложения</a> </li>
+          <li><a href="" class="filter-item">Дизайн</a></li>
+          <li><a href="" class="filter-item">Маркетинг</a></li>
         </ul>
 
         <ul class="portfolio">
@@ -124,18 +128,19 @@
             </a>
           </li>
         </ul>
+      </div>
       </section>
     </main>
 
     <!--Футер-->
     <footer class="footer">
-      <div>
-        <div>
+      <div class="container">
+        <div class="contact-logo">
           <a href="./index.html" class="footer-logo"
             >Web<span class="footer-studio">Studio</span>
           </a>
           <address>
-            <ul class="footer-contact">
+            <ul class="footer-contact" id="contact">
               <li>
                 <a
                   href="https://goo.gl/maps/G2omB5fdm2hjpHhv8"
@@ -144,12 +149,12 @@
                 >
               </li>
               <li>
-                <a href="mailto:info@devstudio.com" class="contact-item"
+                <a href="mailto:info@devstudio.com" class="adress-mail"
                   >info@devstudio.com</a
                 >
               </li>
               <li>
-                <a href="tel:+380961111111" class="contact-item"
+                <a href="tel:+380961111111" class="adress-tel"
                   >+380961111111</a
                 >
               </li>
