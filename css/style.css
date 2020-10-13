@@ -33,7 +33,7 @@ body {
 /* ----------------------------------------------- */
 
 .container {
-  width: 1170px;
+  width: 1200px;
   padding: 0 15px; 
   margin: 0 auto;
 }
@@ -169,6 +169,12 @@ margin-bottom: 30px;
 }
 
 .hero-button {
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  min-width: 200px;
+  
   color: var(--primary-white-color);
   background-color: #2196f3;
 
@@ -190,7 +196,25 @@ margin-bottom: 30px;
   display: flex;
 }
 
+.advantage-item {
+  padding: 94px 0 94px 0;
+}
+
+.advantage-item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.advantage-item:first-child {
+  padding-right: 6px;
+}
+
+.advantage-head {
+  text-align: center;
+}
+
 .advantage-title {
+margin-bottom: 10px;
+
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -209,13 +233,21 @@ margin-bottom: 30px;
   letter-spacing: 0.03em;
 }
 
+
+
 /* -------------------Секция Occupation--------------------- */
+.occupation {
+  padding-bottom: 94px;
+}
+
 .occupation-list {
   list-style: none;
   display: flex;
 }
 
 .occupation-title {
+  margin-bottom: 50px;
+
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -223,35 +255,53 @@ margin-bottom: 30px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  
 }
+.occupation-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 
 /* --------------------Секция Our Team---------------------- */
 
+
 .our-team {
   background: #f5f4fa;
+  padding: 94px 0;
 }
 
 .team-list {
-  list-style: none;
   display: flex;
-}
-
-
-.team-title {
-  color: var(--title-text-color);
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
+  list-style: none;
 }
 
 .team-item {
   background-color: var(--primary-white-color);
+
 }
 
+.team-item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.team-title {
+margin-bottom: 50px;
+
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+
+
 .team-member {
+padding-top: 30px;
+padding-bottom: 10px;
+
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -262,6 +312,8 @@ margin-bottom: 30px;
 }
 
 .team-profession {
+margin-bottom: 30px;
+
   color: var(--primary-text-color);
 
   font-weight: 400;
@@ -350,6 +402,7 @@ margin-bottom: 30px;
 
 .footer {
   background-color: #2f303a;
+  padding: 60px 0;
 }
 
 .contact-logo{
@@ -363,6 +416,9 @@ margin-bottom: 30px;
 }
 
 .footer-logo {
+  margin-bottom: 20px;
+  display: inline-block;
+  
   color: #2196f3;
 
   font-family: "Raleway", sans-serif;
@@ -381,6 +437,9 @@ margin-bottom: 30px;
 }
 
 .contact-adress {
+margin-bottom: 9px;
+display: inline-block;
+
   color: var(--primary-white-color);
 
   font-style: normal;
@@ -396,7 +455,9 @@ margin-bottom: 30px;
   color: var(--accent-color);
 }
 
-.adress-item {
+.adress-mail,.adress-tel {
+display: inline-block;
+
   color: var(--footer-link-color);
 
   font-style: normal;
@@ -407,8 +468,18 @@ margin-bottom: 30px;
   text-decoration: none;
 }
 
-.adress-item:hover,
-.adress-item:focus {
+.adress-mail{
+  margin-bottom: 9px;
+}
+
+.adress-mail:hover,
+.adress-mail:focus {
+ 
+  color: var(--accent-color);
+}
+
+.adress-tel:hover,
+.adress-tel:focus {
   color: var(--accent-color);
 }
 
