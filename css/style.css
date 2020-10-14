@@ -30,6 +30,18 @@ body {
   font-style: normal;
 }
 
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
 /* ----------------------------------------------- */
 
 .container {
@@ -195,14 +207,16 @@ body {
 }
 
 /* --------------------Секция Advantage------------------ */
+
+.advantage {
+padding-top: 94px;
+}
+
 .advantage-list {
   list-style: none;
   display: flex;
 }
 
-.advantage-item {
-  padding: 94px 0 94px 0;
-}
 
 .advantage-item:not(:first-child) {
   margin-left: 30px;
@@ -238,7 +252,7 @@ margin-bottom: 10px;
 
 /* -------------------Секция Occupation--------------------- */
 .occupation {
-  padding-bottom: 94px;
+  padding: 94px 0;
 }
 
 .occupation-list {
@@ -298,11 +312,12 @@ margin-bottom: 10px;
   letter-spacing: 0.03em;
 }
 
-
+.team-image {
+  margin-bottom: 30px;
+}
 
 .team-member {
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 
   color: var(--title-text-color);
 
@@ -328,17 +343,16 @@ margin-bottom: 10px;
 /* ------------------------------------------------------------------------------------------------- */
 /*------------------------ Работа со-страницей Портфолио ---------------------------------*/
 
-/* Filter */
-
-.usless-title {
-  display: none;
+.portfolio-menu {
+  padding: 94px 0;
 }
+
+/* Filter */
 
 .filter-nav {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-  padding-top: 94px;
   
   list-style: none;
 }
@@ -393,25 +407,25 @@ margin-bottom: 10px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .portfolio-item {
   width: calc((100% - 60px) / 3);
-  margin-right: 30px;
-  margin-bottom: 30px;
 
   color: var(--primary-white-color);
-  border: 1px solid #EEEEEE;
+  
 }
 
-.portfolio-item:nth-child(3n) {
-  margin-right: 0px;
+.portfolio-item:nth-child(-n + 6) {
+  margin-bottom: 30px;
 }
 
-.portfolio-item:nth-last-child(-n + 3) {
-  margin-bottom: 93px;
+ .portfolio-item:nth-child(3n + 1),
+ .portfolio-item:nth-child(3n + 2) {
+  margin-right: 30px;
 } 
+
+
 
 .portfolio-title {
   margin: 20px 24px 0 24px;
@@ -427,6 +441,8 @@ margin-bottom: 10px;
 
 .portfolio-link {
   text-decoration: none;
+  display: inline-block;
+  border: 1px solid #EEEEEE;
 }
 
 
