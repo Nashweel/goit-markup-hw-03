@@ -162,9 +162,10 @@ body {
 /* --------------------Секция Hero --------------------------*/
 
 .hero {
-  background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 280px;
+
+  background-color: #2f303a;
 }
 
 .hero-container {
@@ -276,6 +277,9 @@ margin-bottom: 10px;
   margin-right: 30px;
 }
 
+.occupation-image {
+  display: block;
+}
 
 /* --------------------Секция Our Team---------------------- */
 
@@ -445,6 +449,9 @@ margin-bottom: 10px;
   border: 1px solid #EEEEEE;
 }
 
+.portfolio-image {
+  display: block;
+}
 
 .portfolio-type {
   margin: 0 24px 20px 24px;
