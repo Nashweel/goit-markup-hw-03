@@ -162,11 +162,8 @@ body {
 /* --------------------Секция Hero --------------------------*/
 
 .hero {
-  max-width: 1600px;
-  max-height: 600px;
-
-  padding-top: 200px;
-  padding-bottom: 280px;
+  padding-top: 201px;
+  padding-bottom: 200px;
 
   background-color: #2f303a;
 }
